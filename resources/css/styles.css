@@ -1,0 +1,23 @@
+/*== PANEL DE CONTROL === =*/
+.titlePanelControl{
+width: 100%;
+background: #FFF;
+padding: 5px 15px;
+margin-bottom: 10px;
+font-size: 18pt limportant;
+color: #0A4661;
+}
+
+.dashboard{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -0-flex;
+    display: flex ;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+
+
+
+}
