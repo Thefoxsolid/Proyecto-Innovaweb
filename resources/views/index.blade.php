@@ -41,8 +41,8 @@
                 <td></td>
                 <td></td>
                 <td></td>                
-                <td><button class="btn btn-success glyphicon glyphicon-ok">Agregar</button></td>             
-                <td><button class="btn btn-warning glyphicon glyphicon-pencil">Modificar</button></td>
+                <td><button class="btn btn-success glyphicon glyphicon-ok" data-toggle="modal" data-target="#Modalnuevo">Agregar</button></td>             
+                <td><button class="btn btn-warning glyphicon glyphicon-pencil"  data-toggle="modal" data-target="#Modaledicion">>Modificar</button></td>
                 <td><button class="btn btn-danger glyphicon glyphicon-remove">Eliminar</button></td>                                
               </tr>
               </table>

@@ -28,6 +28,16 @@
 
 
 <body class="hold-transition sidebar-mini">
+
+     <!-- Tablas-->
+
+  <div id="table"></div>
+     <div class="container">
+     <div id="tabla"></div>
+  </div>
+  
+  
+   <!-- modal para registros nuevos -->
 <div class="wrapper"> 
 
       {{-- 1. Top Menu --}}
@@ -48,8 +58,54 @@
                
       </div><!-- /.container-fluid -->
     </div>   
-  </div>  
-  <div id="table"></div>
+  </div>
+  
+  
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="Modalnuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>  
+  </div>
+</div>
+
+<!-- modal para edicion de datos -->
+
+<!-- Modal -->
+<div class="modal fade" id="Modaledicion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+
+
 {{-- 4. Right Menu  --}}
   @include('layouts.RightMenu')
 
