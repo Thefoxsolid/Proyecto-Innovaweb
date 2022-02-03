@@ -25,9 +25,27 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-              <button class="btn btn-primary" data-widget="pushmenu">Agregar</button>
-              <button class="btn btn-primary" data-widget="pushmenu">Modificar</button>
-              <button class="btn btn-primary" data-widget="pushmenu">Eliminar</button>
+              
+              <table class= "table table hover table-condensend table-bordered">
+              
+               <tr>
+                <td>ID</td>
+                <td>Abr</td>
+                <td>Clientes</td>
+                <td>Nombre del Proyecto</td>
+                <td>Estado</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                
+                <td><button class="btn btn-success glyphicon glyphicon-ok">Agregar</button></td>             
+                <td><button class="btn btn-warning glyphicon glyphicon-pencil">Modificar</button></td>
+                <td><button class="btn btn-danger glyphicon glyphicon-remove">Eliminar</button></td>                                
+              </tr>
+              </table>
                          
            </div>
        </div>

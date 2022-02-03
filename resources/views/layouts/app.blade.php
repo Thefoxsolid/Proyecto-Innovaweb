@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ config('app.Name ."proyect1')}} </title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
@@ -12,8 +12,21 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('vendors/dist/css/adminlte.min.css') }}">
   <script src="https://kit.fontawesome.com/b4cb752034.js" crossorigin="anonymous"></script>
+  <title>Tabla dinamica</title>
+	<link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
+	<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/themes/default.css">
+  <link rel="stylesheet" type="text/css" href="librerias/select2/css/select2.css">
+  <script src="librerias/jquery-3.2.1.min.js"></script>
+  <script src="js/funciones.js"></script>
+	<script src="librerias/bootstrap/js/bootstrap.js"></script>
+	<script src="librerias/alertifyjs/alertify.js"></script>
+  <script src="librerias/select2/js/select2.js"></script>
 
 </head>
+
+
+
 <body class="hold-transition sidebar-mini">
 <div class="wrapper"> 
 
@@ -36,7 +49,7 @@
       </div><!-- /.container-fluid -->
     </div>   
   </div>  
-  
+  <div id="table"></div>
 {{-- 4. Right Menu  --}}
   @include('layouts.RightMenu')
 
@@ -61,3 +74,10 @@
 <script src="{{ asset('vendors/dist/js/adminlte.min.js')}}" ></script>
 </body>
 </html>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+          $('#tabla').load('componentes/index.blade.php');
+
+        });
+</script>
