@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 @section('content')
@@ -34,17 +35,18 @@
                 <td>Clientes</td>
                 <td>Nombre del Proyecto</td>
                 <td>Estado</td>
-              </tr>
+              </tr>               
               <tr>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>                
-                <td><button class="btn btn-success glyphicon glyphicon-ok" data-toggle="modal" data-target="#Modalnuevo">Agregar</button></td>             
-                <td><button class="btn btn-warning glyphicon glyphicon-pencil"  data-toggle="modal" data-target="#Modaledicion">>Modificar</button></td>
-                <td><button class="btn btn-danger glyphicon glyphicon-remove">Eliminar</button></td>                                
+                <td><button class="btn btn-primary" data-toggle="modal" data-target="#Modalnuevo">Agregar</button></td>             
+                <td><button class="btn btn-warning"  data-toggle="modal" data-target="#Modaledicion">Modificar</button></td>
+                <td><button class="btn btn-danger">Eliminar</button></td>                                
               </tr>
+
               </table>
                          
            </div>

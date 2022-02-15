@@ -12,6 +12,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('vendors/dist/css/adminlte.min.css') }}">
   <script src="https://kit.fontawesome.com/b4cb752034.js" crossorigin="anonymous"></script>
+ 
   <title>Tabla dinamica</title>
 	<link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
@@ -22,10 +23,21 @@
 	<script src="librerias/bootstrap/js/bootstrap.js"></script>
 	<script src="librerias/alertifyjs/alertify.js"></script>
   <script src="librerias/select2/js/select2.js"></script>
+<!-- CSRF Token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
+<title>{{ config('app.name', 'Laravel') }}</title>
+
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
+
+<!-- Fonts -->
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+<!-- Styles -->
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-
-
 
 <body class="hold-transition sidebar-mini">
 
@@ -58,25 +70,32 @@
                
       </div><!-- /.container-fluid -->
     </div>   
-  </div>
-  
-  
- 
+  </div> 
 
 <!-- Modal -->
 <div class="modal fade" id="Modalnuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Agregar Nuevo registro</h4>
       </div>
       <div class="modal-body">
-        ...
+        <label>ID</label>
+        <input type="text" name="" id="id" class="form-control input-sm">
+        <label>Abr</label>
+        <input type="text" name="" id="Abr" class="form-control input-sm">
+        <label>Clientes</label>
+        <input type="text" name="" id="Clientes" class="form-control input-sm">
+        <label>Nombre del proyecto</label>
+        <input type="text" name="" id="Nombre del Proyecto" class="form-control input-sm">
+        <label>Estado</label>
+        <input type="text" name="" id="Estado" class="form-control input-sm">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="Guardarnuevo">
+          Agregar</button>
+        
       </div>
     </div>  
   </div>
@@ -86,18 +105,28 @@
 
 <!-- Modal -->
 <div class="modal fade" id="Modaledicion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Actualizar Datos</h4>
       </div>
       <div class="modal-body">
-        ...
+        <input type="text" hidden="" id="Idcliente" name="">
+        <label>ID</label>
+        <input type="text" name="" id="id_Modificar" class="form-control input-sm">
+        <label>Abr</label>
+        <input type="text" name="" id="Abr_Modificar" class="form-control input-sm">
+        <label>Clientes</label>
+        <input type="text" name="" id="Clientes_Modificar" class="form-control input-sm">
+        <label>Nombre del proyecto</label>
+        <input type="text" name="" id="Nombre del Proyecto_Modificar" class="form-control input-sm">
+        <label>Estado</label>
+        <input type="text" name="" id="Estado_Modificar" class="form-control input-sm">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-warning"  id="actualizaciondatos"  data-dismiss="modal">Actualizar</button>
+        
       </div>
     </div>  
   </div>
